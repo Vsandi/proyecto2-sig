@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Población de Costa Rica 2022</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="map-container">
+        <header>
+            <h1>Mapa de Población de Costa Rica 2022</h1>
+            <div id="zoom-info">Zoom: <span id="zoom-level">8</span></div>
+        </header>
+        
+        <div id="sidebar">
+            <div id="info-panel">
+                <h3>Información del Mapa</h3>
+                <div id="feature-info">
+                    <p>Haz clic o pasa el mouse sobre el mapa para ver información</p>
+                </div>
+            </div>
+            
+            <div id="description">
+                <h3>Mapa de Población de Costa Rica 2022</h3>
+                <p>Este mapa interactivo muestra la distribución poblacional de Costa Rica según los datos del INEC para el año 2022. La visualización incluye tres niveles administrativos: provincias, cantones y distritos, cada uno con su respectiva información demográfica.</p>
+                
+                <p><strong>Navegación:</strong> Utiliza el zoom para cambiar entre niveles administrativos. Al acercarte podrás ver mayor detalle territorial y más servicios disponibles.</p>
+            </div>
+        </div>
+        
+        <div id="map"></div>
+        
+        <div id="controls">
+            <div id="layer-controls">
+                <h4>🔧 Controles</h4>
+                <label><input type="checkbox" id="hospitales-toggle" checked> Mostrar Hospitales</label>
+                <label><input type="checkbox" id="escuelas-toggle" checked> Mostrar Escuelas</label>
+                <button id="reset-view">🗺️ Vista Inicial</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
